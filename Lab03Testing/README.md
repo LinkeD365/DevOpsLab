@@ -20,15 +20,15 @@ Playwright is an open source framework, created by Microsoft to allow testing ac
 
 4. Install the Playwright Extension for VSCode
 
- ![alt text](images/image.png)
+ ![alt text](Images/image.png)
 
 5. Once installed, open Commands (Ctrl + Shift + P) and type Test and run the command Test>: Install Playwright
 
- ![alt text](images/image-1.png)
+ ![alt text](Images/image-1.png)
 
 6. In the menu, select all 3 browsers, leave Use Javascript blank (we want to use the default Typescript) and add the Github Actions workflow checkbox filled
 
-![alt text](images/image-2.png)
+![alt text](Images/image-2.png)
 
 7. This will create a sample test script in your new folder and allow you to run the sample test scripts.
 
@@ -38,7 +38,7 @@ Playwright is an open source framework, created by Microsoft to allow testing ac
 
  This should run 6 tests using 6 workers as defined in the example.spec.ts file
 
- ![alt text](images/image-3.png)
+ ![alt text](Images/image-3.png)
 
  8. Once returned, take a look at the results
 
@@ -48,7 +48,7 @@ Playwright is an open source framework, created by Microsoft to allow testing ac
 
  This will display a webpage with the results for you to dissect.
 
- ![alt text](images/image-4.png)
+ ![alt text](Images/image-4.png)
 
 ### 2. Configure MFA for Playwright
 
@@ -70,7 +70,7 @@ For our lab, we will be adding a Timed One Time Passcode method, which will mimi
 
 7. Copy and keep safe the Secret Key, you will need this later.
 
-![alt text](images/image-5.png)
+![alt text](Images/image-5.png)
 
 8. Open your authenticator app on your phone and scan the QR code.
 
@@ -99,7 +99,7 @@ npx playwright codegen https://<your org>.crmXX.dynamics.com
 
 This should open up a chromium (Not Chrome or Safari etc) browser with a log in box
 
-![alt text](images/image-6.png)
+![alt text](Images/image-6.png)
 
 As you move your cursor around, the selection items are highlighted and the Playwright inspector shows you what it wants to do.
 
@@ -111,7 +111,7 @@ As you move your cursor around, the selection items are highlighted and the Play
 
 5. Select the 'I can't use my Microsoft Authenticator app right now'
 
-![alt text](images/image-7.png)
+![alt text](Images/image-7.png)
 
 6. Select Use a verification code
 
@@ -123,17 +123,17 @@ As you move your cursor around, the selection items are highlighted and the Play
 
 10. Select the first listing to go to the record (It depends on what records you created in the pre-requisites stages on what you see here)
 
-![alt text](images/image-8.png)
+![alt text](Images/image-8.png)
 
 So this should mean we are in a listing record. Let us check we are getting the results we expect by asserting (Testing term for making sure) a few things.
 
 Select the Assert Text button then the first listing (This should be Beach House if you have imported the data from the pre-requisites)
 
-![alt text](images/image-9.png)
+![alt text](Images/image-9.png)
 
-![alt text](images/image-10.png)
+![alt text](Images/image-10.png)
 
-![alt text](images/image-11.png)
+![alt text](Images/image-11.png)
 
 Ensure you select the Accept tick.
 
@@ -143,7 +143,7 @@ Ensure you select the Accept tick.
 
 > {!TIP] If you see Enter options in your field entries, ensure you remove them. We have a happy of just pressing enter when entering passwords and other information, which works great when Playwright runs the test, but can be hit and miss when you are walking through the test scripts.
 
-![alt text](images/image-12.png)
+![alt text](Images/image-12.png)
 
 ### Automate login using a generated code
 
@@ -155,7 +155,7 @@ To automate this script, so it runs every time, on every browser without interac
 
 Paste your code into that box.
 
-![alt text](images/image-13.png)
+![alt text](Images/image-13.png)
 
 At the top of the code, below the first line copy the following code
 
